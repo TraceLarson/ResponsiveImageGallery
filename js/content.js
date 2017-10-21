@@ -9,7 +9,7 @@ const secretId = 'ad6fc8d1783e91c70b0b0d3664a9212982e24559b55c8b50bd7d55a3acbc2a
 
 
 
-const url='https://api.unsplash.com/search/photos?client_id=' + applicationId + '&per_page=9&query=office';
+const url='https://api.unsplash.com/search/photos?client_id=' + applicationId + '&per_page=9&query=travel';
 
 
 var myInit = {

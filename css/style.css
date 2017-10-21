@@ -1,5 +1,22 @@
 @import url("https://fonts.googleapis.com/css?family=Open+Sans");
-body {
+h1 {
+  font-family: Verdana, Arial, sans-serif;
+  font-weight: bold;
+  font-size: 1.5rem; }
+
+@-webkit-keyframes spin {
+  100% {
+    -webkit-transform: rotate(1turn);
+            transform: rotate(1turn); } }
+
+@keyframes spin {
+  100% {
+    -webkit-transform: rotate(1turn);
+            transform: rotate(1turn); } }
+
+@-webkit-keyframes showInfo {}
+
+@keyframes showInfo {}body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -9,29 +26,38 @@ body {
           flex-flow: column; }
 
 header {
-  margin: auto; }
+  margin: auto;
+  text-align: center; }
+  header img {
+    -webkit-animation: spin 10s linear infinite;
+            animation: spin 10s linear infinite;
+    -webkit-animation-play-state: paused;
+            animation-play-state: paused; }
+    header img:hover {
+      -webkit-animation-play-state: running;
+              animation-play-state: running; }
 
 main {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex; }
 
-section {
-  margin-left: auto;
-  margin-right: auto;
-  width: 80%; }
-
 ul {
   list-style: none;
   display: -webkit-box;
   display: -ms-flexbox;
-  display: flex; }
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column wrap;
+          flex-flow: column wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  max-width: 1000px; }
 
 li {
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-flow: row nowrap;
-          flex-flow: row nowrap; }
+  border: 1px solid green; }
 
 footer {
   margin: auto; }
@@ -42,8 +68,8 @@ footer {
   display: flex;
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
-      -ms-flex-flow: row;
-          flex-flow: row;
+      -ms-flex-flow: row wrap;
+          flex-flow: row wrap;
   color: white;
   background: black; }
 
@@ -53,7 +79,7 @@ footer {
   display: flex;
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
-      -ms-flex-flow: row;
-          flex-flow: row;
+      -ms-flex-flow: row wrap;
+          flex-flow: row wrap;
   color: white;
   background: black; }

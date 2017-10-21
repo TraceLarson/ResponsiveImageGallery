@@ -12,24 +12,40 @@ body{
 }
 header{
   margin: auto;
+  text-align: center;
+  img{
+    animation: spin 10s linear infinite;
+    animation-play-state: paused;
+
+    &:hover{
+      animation-play-state: running;
+    }
+  }
+
 }
+
 main{
   display: flex;
 }
 
-section{
-  margin-left: auto;
-  margin-right: auto;
-  width: 80%;
-}
 
 ul{
   list-style: none;
   display: flex;
+  flex-flow: column wrap;
+  justify-content: center;
+  max-width: 1000px;
 }
 
 li{
-  flex-flow: row nowrap;
+  border: 1px solid green;
+
+  img{
+    &:hover{
+
+    }
+  }
+
 }
 
 footer{
@@ -38,13 +54,14 @@ footer{
 
 .author{
   display: flex;
-  flex-flow: row;
+  flex-flow: row wrap;
   color: white;
   background: black;
 }
 .likes{
   display: flex;
-  flex-flow: row;
+  flex-flow: row wrap;
   color: white;
   background: black;
 }
+
