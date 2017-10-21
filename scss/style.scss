@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans');
 @import "variables.scss";
 @import "base.scss";
 @import "type.scss";
@@ -5,4 +6,45 @@
 @import "mixins/mixins.scss";
 @import "animations/animations.scss";
 
+body{
+  display: flex;
+  flex-flow: column;
+}
+header{
+  margin: auto;
+}
+main{
+  display: flex;
+}
 
+section{
+  margin-left: auto;
+  margin-right: auto;
+  width: 80%;
+}
+
+ul{
+  list-style: none;
+  display: flex;
+}
+
+li{
+  flex-flow: row nowrap;
+}
+
+footer{
+  margin: auto;
+}
+
+.author{
+  display: flex;
+  flex-flow: row;
+  color: white;
+  background: black;
+}
+.likes{
+  display: flex;
+  flex-flow: row;
+  color: white;
+  background: black;
+}
